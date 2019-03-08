@@ -33,7 +33,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("\n -- Fake Software Quote \n")
+	fmt.Println("\n -- FaKe Software Quote \n")
 }
 
 // Markov is a Markov chain text generator.
@@ -135,16 +135,6 @@ func isSentenceEnd(s string) bool {
 }
  
 func appendMax(max int, slice []string, value string) []string {
-	// Often FIFO queues in Go are implemented via:
-	//     fifo = append(fifo, newValues...)
-	// and:
-	//     fifo = fifo[numberOfValuesToRemove:]
-	//
-	// However, the append will periodically reallocate and copy. Since
-	// we're dealing with a small number (usually two) of strings and we
-	// We only need to append a single new string it's better to (almost)
-	// never reallocate the slice and just copy n-1 strings (which only
-	// copies n-1 pointers, not the entire string contents) every time.
 	if len(slice)+1 > max {
 		n := copy(slice, slice[1:])
 		slice = slice[:n]

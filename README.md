@@ -4,7 +4,7 @@
 
 ## Installation
 
-Download pre-compiled binaries for Mac, Windows and Linux from the [releases](https://github.com/vaithak/fsq/releases) page.  
+Download pre-compiled binaries for Mac, Windows and Linux from the [releases](https://github.com/vaithak/fksq/releases) page.  
 
 ### Mac OSX Installation of pre-compiled binaries
 Please submit an issue if they don't work for you.  
@@ -20,14 +20,14 @@ $ cd ~/bin
 export PATH=$PATH:$HOME/bin
 ```  
 
-4. Download the `fsq` binary for OSX and rename it.  
+4. Download the `fksq` binary for OSX and rename it.  
 ```sh
-$ wget https://github.com/vaithak/fsq/releases/download/v0.1.0/fsq-darwin-amd64  
-$ mv fsq-darwin-amd64 fsq
+$ wget https://github.com/vaithak/fksq/releases/download/v0.1.0/fksq-darwin-amd64  
+$ mv fksq-darwin-amd64 fsq
 ```
 5. Finally, make the binary an executable file and you are good to go!
 ```
-$ chmod +x fsq
+$ chmod +x fksq
 ```  
 
 ### Installation of pre-compiled binaries on Ubuntu 

@@ -63,7 +63,7 @@ go get github.com/vaithak/fksq
 
 ```
   Usage:
-    clita [command]
+      fksq
   
   Flags: 
     -in string

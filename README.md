@@ -77,7 +77,12 @@ go get github.com/vaithak/fksq
 ## Sample Generated Quotes
 
 ```
-Instead, the internals should be really excellent. Because this is not well written. For me, a comment is almost a note like "I should try to rewrite this code later." I think it is also easy to fall out of touch with the Universe to create bigger and better idiot-proof programs, while the Universe is trying to decide what to do, let us concentrate rather on explaining to human beings who can figure costs, and so they are forgiving of certain kinds of errors.
+Instead, the internals should be really excellent. Because this is not well written.  
+For me, a comment is almost a note like "I should try to rewrite this code later."  
+I think it is also easy to fall out of touch with the Universe to create bigger and  
+better idiot-proof programs, while the Universe is trying to decide what to do,  
+let us concentrate rather on explaining to human beings who can figure costs,  
+and so they are forgiving of certain kinds of errors.
  -- FaKe Software Quote 
  
 We all suck. The Internet? Is that thing still around?
@@ -89,7 +94,8 @@ All OO languages show some tendency to be too clever for the first time.
 Turing and von Neumann understood from the beginning that a PL is a fundamentally different job.
  -- FaKe Software Quote  
  
-Avoid OO whenever possible. Contrary to common belief, most problems are local and you don’t know quite where you are making one.
+Avoid OO whenever possible. Contrary to common belief, most problems are local and you don’t  
+know quite where you are making one.
  -- FaKe Software Quote 
  
 Necessity is the essence of things? The so-called "desktop metaphor" of today's workstation is  

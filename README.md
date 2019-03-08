@@ -1,6 +1,6 @@
-# fsq  
+# fksq  
 
-**F**ake **S**oftware **Q**uote generator using Markov Chains.  
+**F**a**K**e **S**oftware **Q**uote generator using Markov Chains.  
 
 ## Installation
 

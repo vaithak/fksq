@@ -57,4 +57,40 @@ $ chmod +x fksq
 ### Downloading using go-get
 ```sh
 go get github.com/vaithak/fksq  
+```  
+
+## Usage
+
+```
+  Usage:
+    clita [command]
+  
+  Flags: 
+    -in string
+      	input file (default "data.txt")
+    -n int
+      	number of words to use as prefix (default 2)
+    -words int
+      	Minimum number of words. (default 8)
+```  
+
+## Sample Generated Quotes
+
+```
+We all suck. The Internet? Is that thing still around?
+ -- FaKe Software Quote 
+ 
+All OO languages show some tendency to be too clever for the first time.
+ -- FaKe Software Quote 
+ 
+Turing and von Neumann understood from the beginning that a PL is a fundamentally different job.
+ -- FaKe Software Quote  
+ 
+Avoid OO whenever possible. Contrary to common belief, most problems are local and you don’t know quite where you are making one.
+ -- FaKe Software Quote 
+ 
+Necessity is the essence of things? The so-called "desktop metaphor" of today's workstation is  
+instead an "airplane-seat" metaphor.
+ -- FaKe Software Quote
+
 ```

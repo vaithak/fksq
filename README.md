@@ -56,5 +56,5 @@ $ chmod +x fsq
 
 ### Downloading using go-get
 ```sh
-    go get github.com/vaithak/fsq  
+go get github.com/vaithak/fsq  
 ```

@@ -38,9 +38,10 @@ func main() {
 
 // Markov is a Markov chain text generator.
 type Markov struct {
-	n           int	// Window length
-	capitalized int // number of keys that start capitalized
-	suffix      map[string][]string // Map of prefixString -> [poosible suffix words]
+	n            int	// Window length
+	countCapital int	// number of keys that start capitalized
+	capitalized  []string 
+	suffix       map[string][]string // Map of prefixString -> [poosible suffix words]
 }
  
 // NewMarkovFromFile initializes the Markov text generator with window 'n' from the contents of 'filename'.
@@ -57,6 +58,8 @@ func NewMarkovFromFile(filename string, n int) (*Markov, error) {
 func NewMarkov(r io.Reader, n int) (*Markov, error) {
 	m := &Markov{
 		n:      n,
+		countCapital: 0,
+		capitalized: make([]string, 0),
 		suffix: make(map[string][]string),
 	}
 	sc := bufio.NewScanner(r)
@@ -69,7 +72,8 @@ func NewMarkov(r io.Reader, n int) (*Markov, error) {
 			prefix := strings.Join(window, " ")
 			m.suffix[prefix] = append(m.suffix[prefix], word)
 			if isCapitalized(prefix) {
-				m.capitalized++
+				m.capitalized = append(m.capitalized, prefix)
+				m.countCapital++
 			}
 		}
 		window = appendMax(n, window, word)
@@ -84,18 +88,10 @@ func NewMarkov(r io.Reader, n int) (*Markov, error) {
 func (m *Markov) Output(w io.Writer, n int) error {
 	bw := bufio.NewWriter(w)
  
-	i := rand.Intn(m.capitalized)
+	i := rand.Intn(m.countCapital)
 
 	var prefix string
-	for prefix = range m.suffix {
-		if !isCapitalized(prefix) {
-			continue
-		}
-		if i == 0 {
-			break
-		}
-		i--
-	}
+	prefix = m.capitalized[i]
  
 	bw.WriteString(prefix)
 	prefixWords := strings.Split(prefix, " ")

@@ -711,7 +711,7 @@ it would not have been trivial without the fundamental unifying notion
 of the process as an autonomous unit of computation, with process
 control being programmable.
 The day Linux gives the Mac diagnostic that you can't open a file
-because you don't have the application is the day Linux becones
+because you don't have the application is the day Linux becomes
 non-Unix.
 There are two ways of constructing a software design. One is to make it
 so simple that there are obviously no deficiencies; the other is to make
